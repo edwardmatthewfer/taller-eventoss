@@ -5,3 +5,9 @@ function clickDiv(){
 }
 
 bestDiv.addEventListener("click", clickDiv);
+
+var bestButton = document.getElementById("elButton");
+
+bestButton.addEventListener("click", (Event) => {
+        Event.stopPropagation();
+});
